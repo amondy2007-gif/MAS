@@ -1088,9 +1088,12 @@ body.en .about-floating-card {
     font-size: 16px;
     color: var(--text-secondary);
     margin-bottom: 4px;
+    transition: var(--transition);
+}
+
+.contact-link.tel {
     font-family: var(--font-en);
     direction: ltr;
-    transition: var(--transition);
 }
 
 .contact-link:hover {
@@ -1099,8 +1102,28 @@ body.en .about-floating-card {
 
 .contact-address {
     font-size: 15px;
-    color: var(--text-secondary);
+    color: var(--text-primary);
+    font-weight: 500;
     line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.contact-map-btn {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--accent);
+    background: var(--accent-glow);
+    padding: 8px 14px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-accent);
+    transition: var(--transition);
+}
+
+.contact-map-btn:hover {
+    background: var(--accent);
+    color: #000;
 }
 
 .contact-card p {
